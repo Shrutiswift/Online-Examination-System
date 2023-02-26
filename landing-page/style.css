@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(180deg, #34348c, #232527);
+    background-color: rgb(0,65,90);
     font-family: 'Poppins', sans-serif;
 }
 ::-webkit-scrollbar {
@@ -35,7 +35,6 @@ display: none;
 .navbar-nav{
     margin-left: auto;
     font-size: 150%;
-
 }
 #questions-div button{
     color: #ddf0ff;
@@ -54,9 +53,9 @@ footer{
         width: 50%;
     }
 }
-@media (min-width: 992px) {
+@media (min-width: 997px) {
 .col-lg-3 {
     flex: 0 0 auto;
-    width: 20%;
+    width: 25%;
 }}
 
