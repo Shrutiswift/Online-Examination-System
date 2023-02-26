@@ -1,5 +1,5 @@
 body{
-    background-color: #c2defa;
+    /* background-color: #7b93b0; */
     font-family: sans-serif;
 }
 ::-webkit-scrollbar {
@@ -48,10 +48,15 @@ display: none;
 .contributors-card{
     background: rgba(255, 255, 255, 0.65);
     backdrop-filter: blur(50px);
-}
+    /* background-color:#262c35; */
 
+}
+.card-body{
+    background-color:#262c35;
+
+}
 footer{
-    background-color:#352126;
+    background-color:#262c35;
 }
 
 @media (min-width: 768px) {
