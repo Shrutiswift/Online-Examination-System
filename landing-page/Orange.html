@@ -17,14 +17,14 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-1">
+    <nav class="navbar navbar-expand-lg navbar-dark py-1">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse navbar" id="navbarNav">
-                <div class="navbar-nav">
-                    <a class="nav-link text-light" aria-current="page" href="#photo">Home</a>
+                <div class="navbar-nav" style = "margin-right: 1px;">
+                    <a class="nav-link text-light" aria-current="page" href="#first">Home</a>
                     <a class="nav-link text-light" href="#questions">FAQ</a>
                     <a class="nav-link text-light" href="#contributors">Contact</a>
                 </div>
@@ -73,17 +73,17 @@
     <div class="main-box vh-100">
         <!-- Showcase -->
         <section class="text-light p-5 pt-lg-3 text-center text-sm-start">
-            <div class="container">
+            <div class="container-2">
                 <div class="d-sm-flex align-items-center justify-content-between">
                     <div id="header-content">
                         <!-- <h1>Become a <span class="text-warning"> TOPPER </span></h1> -->
-                        <h1><div class="head">Become a TOPPER</h1>
+                        <h1><div class="head" id = "first">Become a TOPPER</h1>
                         <p class="lead my-5">
                             We are focusing on our students the fundamentals of the latest
                             and greatest technologies to prepare them for their future.
                         </p>
                     </div>
-                    <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="" />
+                    <img class="img-fluid w-50 d-none d-sm-block"  src="img/showcase.svg" alt="" />
                 </div>
             </div>
         </section>
@@ -91,13 +91,13 @@
         <!-- Newsletter -->
         <section class="p-5 h-100">
             <div class="container">
-                <div class="d-md-flex justify-content-between align-items-center">
+                <div class="d-md-flex justify-content-between align-items-center" style="color: #262c35;">
                     <!-- <h3 class="mb-3 mb-md-0 text-dark">Welcome to Online Examination Center</h3> -->
-                    <div class="position-absolute bottom-0 end-0 p-3">
-                        <button id="test" class="btn btn-dark btn-lg" type="button">
+                    <div class="position-absolute">
+                        <button id="test" class="btn btn-lg text-white" type="button">
                             Make a test
                         </button>
-                        <button id="test" class="btn btn-dark btn-lg" type="button">
+                        <button id="test" class="btn btn-lg text-white" type="button">
                             Take a test
                         </button>
                     </div>
@@ -107,9 +107,9 @@
     </div>
 
     <!-- Question Accordion -->
-    <section id="questions" class="p-5">
+    <section id="questions" class="p-3">
         <div class="container">
-            <h2 class="text-center text-dark mb-4">Frequently Asked Questions</h2>
+            <h2 class="text-center text-dark mb-3">Frequently Asked Questions</h2>
             <div class="accordion accordion-flush" id="questions-div">
                 <!-- Item 1 -->
                 <div class="accordion-item">

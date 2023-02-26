@@ -1,8 +1,7 @@
 body{
-    background-color: white;
-    font-family: 'Poppins', sans-serif;
+    background-color: #c2defa;
+    font-family: sans-serif;
 }
-
 ::-webkit-scrollbar {
 display: none;
 }
@@ -11,18 +10,18 @@ display: none;
     height: auto;
     width: 100%;
 }
-
 .main-box{
     position: relative;
 }
 #test{
-    background-color: rgb(63,61,86,hover); 
+    background-color: #272c35; 
 } 
 #header-content h1{
     font-weight: 600 !important;
 }
 #questions-div div{
-    background-color: hsl(200, 6%, 10%);
+    /* background-color: hsl(200, 6%, 10%); */
+    background-color: #272c35;
     border: 0.5px solid #232527;
     color: #ddf0ff;
     font-size: small;   
@@ -33,12 +32,19 @@ display: none;
 .navbar-nav{
     margin-left: auto;
     font-size: 150%;
+    font-family: sans-serif;
+}
+.navbar-expand-lg{
+    background-color: #272c35;
 }
 #questions-div button{
     color: #ddf0ff;
-    background-color: #181A1B;
+    /* background-color: #181A1B; */
+    background-color: #262c35;
 }
-
+.container button{
+    background-color: #262c35;
+}
 .contributors-card{
     background: rgba(255, 255, 255, 0.65);
     backdrop-filter: blur(50px);
