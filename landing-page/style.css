@@ -1,0 +1,62 @@
+body{
+    background: linear-gradient(180deg, #34348c, #232527);
+    font-family: 'Poppins', sans-serif;
+}
+::-webkit-scrollbar {
+display: none;
+}
+#wave{
+    position: absolute;
+    height: auto;
+    width: 100%;
+}
+/* .tertiaryheadertext{
+    background-image: linear-gradient(132deg, #2d2c32, #292828);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+.main-box{
+    position: relative;
+}
+#test{
+    background-color: rgb(63,61,86,hover); 
+} 
+#header-content h1{
+    font-weight: 600 !important;
+}
+
+#questions-div div{
+    background-color: hsl(200, 6%, 10%);
+    border: 0.5px solid #232527;
+    color: #ddf0ff;
+    font-size: small; 
+}
+.navbar-nav{
+    margin-left: auto;
+    font-size: 150%;
+
+}
+#questions-div button{
+    color: #ddf0ff;
+    background-color: #181A1B;
+}
+.contributors-card{
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(50px);
+}
+footer{
+    background-color:#352126;
+}
+
+@media (min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+@media (min-width: 992px) {
+.col-lg-3 {
+    flex: 0 0 auto;
+    width: 20%;
+}}
+
