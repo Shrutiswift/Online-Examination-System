@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
         rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -12,12 +15,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Orange</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark py-1">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark py-1">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
@@ -30,29 +34,7 @@
                 </div>
             </div>
         </div>
-    </nav>
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id = "wave" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1440" height="350" preserveAspectRatio="none" viewBox="0 0 1440 600">
-        <g mask="url(&quot;#SvgjsMask2472&quot;)" fill="none">
-            <rect width="1440" height="600" x="0" y="0" fill="url(#SvgjsLinearGradient2473)"></rect>
-            <path d="M1440 0L788.73 0L1440 51.59z" fill="rgba(255, 255, 255, .1)"></path>
-            <path d="M788.73 0L1440 51.59L1440 202.42000000000002L634.13 0z" fill="rgba(255, 255, 255, .075)"></path>
-            <path d="M634.13 0L1440 202.42000000000002L1440 283.12L388.98 0z" fill="rgba(255, 255, 255, .05)"></path>
-            <path d="M388.98 0L1440 283.12L1440 356.47L347.22 0z" fill="rgba(255, 255, 255, .025)"></path>
-            <path d="M0 600L668.29 600L0 364.91999999999996z" fill="rgba(0, 0, 0, .1)"></path>
-            <path d="M0 364.91999999999996L668.29 600L1049.1399999999999 600L0 284.89z" fill="rgba(0, 0, 0, .075)"></path>
-            <path d="M0 284.89L1049.1399999999999 600L1260.1499999999999 600L0 236.57z" fill="rgba(0, 0, 0, .05)"></path>
-            <path d="M0 236.57L1260.1499999999999 600L1339.79 600L0 108.6z" fill="rgba(0, 0, 0, .025)"></path>
-        </g>
-        <defs>
-            <mask id="SvgjsMask2472">
-                <rect width="1440" height="600" fill="#ffffff"></rect>
-            </mask>
-            <linearGradient x1="14.58%" y1="135%" x2="85.42%" y2="-35%" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient2473">
-                <stop stop-color="rgba(14, 42, 71, 1)" offset="0.28"></stop>
-                <stop stop-color="rgba(133, 161, 197, 1)" offset="1"></stop>
-            </linearGradient>
-        </defs>
-    </svg>
+    </nav> -->
     <!-- <svg xmlns="http://www.w3.org/2000/svg" id="wave" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:svgjs="http://svgjs.com/svgjs" width="1445" height="350" preserveAspectRatio="none"
     viewBox="0 0 1445 350">
@@ -93,29 +75,41 @@
     </defs>
 </svg> -->
     <div class="main-box vh-100">
+        <div id="sidebar-div">
+            <div id="mySidebar" class="sidebar">
+                <button class="closebtn" onclick="closeNav()">x</button>
+                <br><br><br>
+                <a href="#">About</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact</a>
+            </div>
+            <div id="main">
+                <button class="openbtn" id="navbar-open-btn" onclick="openNav()">☰</button>
+            </div>
+        </div>
         <!-- Showcase -->
-        <section class="text-light p-5 pt-lg-3 text-center text-sm-start">
-            <div class="container-2">
+        <section class="text-light text-center text-sm-start" id = "main-section">
+            <div class="container">
                 <div class="d-sm-flex align-items-center justify-content-between">
                     <div id="header-content">
                         <!-- <h1>Become a <span class="text-warning"> TOPPER </span></h1> -->
-                        <h1><div class="head" id = "first">Become a TOPPER</h1>
-                        <p class="lead my-5">
+                        <h1><div class="head text-dark" id = "first">Become a TOPPER</h1>
+                        <p class="lead my-5 text-dark">
                             We are focusing on our students the fundamentals of the latest
                             and greatest technologies to prepare them for their future.
                         </p>
                     </div>
-                    <img class="img-fluid w-50 d-none d-sm-block"  src="img/showcase.svg" alt="" />
+                    <img class="img-fluid d-none d-sm-block p-2 m-2"  id = "photo" src="img/showcase.svg" alt="" />
                 </div>
             </div>
         </section>
- 
+
         <!-- Newsletter -->
-        <section class="p-5 h-100">
+        <section class="p-5" id = "test-section">
             <div class="container">
                 <div class="d-md-flex justify-content-between align-items-center" style="color: #262c35;">
                     <!-- <h3 class="mb-3 mb-md-0 text-dark">Welcome to Online Examination Center</h3> -->
-                    <div class="position-absolute">
+                    <div class = "mt-lg-5">
                         <button id="test" class="btn btn-lg text-white" type="button">
                             Make a test
                         </button>

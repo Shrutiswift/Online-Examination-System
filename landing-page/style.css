@@ -1,62 +1,89 @@
-body{
+body {
     /* background-color: #7b93b0; */
-    font-family: sans-serif;
+    font-family: 'JetBrains Mono',monospace;
 }
+
 ::-webkit-scrollbar {
-display: none;
+    display: none;
 }
-#wave{
+
+#wave {
     position: absolute;
     height: auto;
     width: 100%;
 }
-.main-box{
+
+.main-box {
     position: relative;
 }
-#test{
-    background-color: #272c35; 
-} 
-#header-content h1{
+
+#main-section{
+    padding-top: 50px;
+}
+
+#test {
+    background-color: #272c35;
+}
+#header-content{
+    padding-left: 60px;
+}
+#header-content h1 {
     font-weight: 600 !important;
 }
-#questions-div div{
+
+#test-section{
+    float: right;
+    
+}
+
+#questions-div div {
     /* background-color: hsl(200, 6%, 10%); */
     background-color: #272c35;
     border: 0.5px solid #232527;
     color: #ddf0ff;
-    font-size: small;   
+    font-size: small;
 }
+
 #header-line {
     padding-top: 1rem;
 }
-.navbar-nav{
+#photo{
+    height: 300px;
+}
+.navbar-nav {
     margin-left: auto;
     font-size: 150%;
     font-family: sans-serif;
 }
-.navbar-expand-lg{
+
+.navbar-expand-lg {
     background-color: #272c35;
 }
-#questions-div button{
+
+#questions-div button {
     color: #ddf0ff;
     /* background-color: #181A1B; */
     background-color: #262c35;
 }
-.container button{
+
+.container button {
     background-color: #262c35;
 }
-.contributors-card{
+
+.contributors-card {
     background: rgba(255, 255, 255, 0.65);
     backdrop-filter: blur(50px);
     /* background-color:#262c35; */
 
 }
-.card-body{
-    background-color:#262c35;
+
+.card-body {
+    background-color: #262c35;
 
 }
-footer{
-    background-color:#262c35;
+
+footer {
+    background-color: #262c35;
 }
 
 @media (min-width: 768px) {
@@ -64,8 +91,65 @@ footer{
         width: 50%;
     }
 }
+
 @media (min-width: 992px) {
-.col-lg-3 {
-    flex: 0 0 auto;
-    width: 20%;
-}}
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}
+
+
+
+#sidebar-div{
+    position: absolute;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #4b4040;
+    display: block;
+    transition: 0.3s;
+}
+.sidebar .closebtn {
+    top: 0;
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(12, 12, 12);
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(12, 12, 12);
+    padding: 10px 15px;
+    border: none;
+}
+
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
