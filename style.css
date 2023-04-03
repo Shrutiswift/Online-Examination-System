@@ -7,9 +7,12 @@ body {
 }
 #main-content-wrapper{
     position: relative;
+    
 }
 #main-section{
     padding-top: 50px;
+    width: 85%;
+    margin-left: 6%;
 }
 #header-content{
     padding-left: 60px;
