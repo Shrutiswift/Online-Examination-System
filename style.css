@@ -17,7 +17,10 @@ body {
 #header-content h1 {
     font-weight: 600 !important;
 }
-
+#test-section{
+    width: 94%;
+    margin-left: 3%;
+}
 .test-btn {
     background-color: rgb(255,115,92);
     border: none;
@@ -46,7 +49,7 @@ body {
     
 }
 #questions-div{
-    width: 85%; 
+    width: 84%; 
     margin-left: 8%;
 } 
 #questions-div button {
